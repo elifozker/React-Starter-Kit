@@ -4,6 +4,7 @@ import "./tailwind.css"
 import Tab from "./components/Tab"
 import Button from "./components/Button"
 import Test from "./Test"
+import Todo from "./components/useReducer"
 
 
 const Input = forwardRef((props,ref) => {
@@ -38,6 +39,8 @@ function App() {
   }
   return (
     <>
+    <Todo/>
+    <hr/>
     <h1>useRef() - ForwardRef()</h1>
     <Input ref={inputRef}/>
     <button onClick={focusInput}>Focusla</button>
